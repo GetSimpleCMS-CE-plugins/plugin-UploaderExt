@@ -40,23 +40,7 @@ if(document.querySelector(".uploadform")){document.querySelector(".uploadform").
      height:40px; border:none;color:#fff;border-radius:5px; border:none;background:#CF3805;margin-top:10px;" value="<?php i18n('UPLOAD'); ?>" name="fileUploader"></form></div>`;}
 </script>
  
-<script>
-	document.querySelector('input[name="compress"]').addEventListener('click',function(){
-		if(this.checked == true){
-			document.querySelector('.webp').style.display="none";
-		}else{
-			document.querySelector('.webp').style.display="block";
-		}
-	});
-
-	document.querySelector('input[name="webp"').addEventListener('click',function(){
-		if(this.checked == true){
-			document.querySelector('.compress').style.display="none";
-		}else{
-			document.querySelector('.compress').style.display="block";
-		}
-	});
-</script>
+ 
  
 <?php
  
