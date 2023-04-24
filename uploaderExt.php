@@ -29,7 +29,7 @@ function uploaderExt()
 	include GSPLUGINPATH . 'uploaderExt/uploaderExtFunction.inc.php';
 };
 
-add_action('plugins-sidebar', 'createSideMenu', array($thisfile, i18n_r('uploaderExt/LANG_Settings')));
+add_action('plugins-sidebar', 'createSideMenu', array($thisfile, i18n_r('uploaderExt/LANG_Settings').' 📤'));
 
 function uploaderExtSettings()
 {
