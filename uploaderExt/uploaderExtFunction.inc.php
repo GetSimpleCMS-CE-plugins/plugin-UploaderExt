@@ -173,7 +173,7 @@ if (isset($_POST['fileUploader'])) {
 
 			$name = pathinfo($targetNameWithoutSpace, PATHINFO_FILENAME);
 			$targetFile = $targetPath . $name . '.' . $extension;
-			$targetFileP = $targetPath . $name . '.' . '.webp';
+			$targetFileP = $targetPath . $name . '.webp';
 
 			#check file exist 
 			if (file_exists($targetFile)) {
@@ -183,7 +183,7 @@ if (isset($_POST['fileUploader'])) {
 
 			if (file_exists($targetFileP)) {
 				$name = pathinfo($targetNameWithoutSpace, PATHINFO_FILENAME);
-				$targetFileP = $targetPath . $name . '-' . rand(1, 4000) . '.' . '.webp';
+				$targetFileP = $targetPath . $name . '-' . rand(1, 4000) . '.webp';
 			}
 
 			#upload files
